@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Autocentre DB</h1>
+    <p class="lead">Autocentre DB is the first .NET application I've wrote. It helps to manage with the DB contained on SSMS local server.</p>
+   
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Clients","Index","Clients")</h2>
+        <p>
+            In Clients section we can edit the Clients table 
+        </p>
+    </div>
+    <div class="col-md-4">
+		<h2>@Html.ActionLink("Cars", "Index", "Cars")</h2>
+		<p>
+			In Cars section we can edit the Cars table
+		</p>      
+    </div>
+    <div class="col-md-4">
+		<h2>@Html.ActionLink("Requests", "Index", "Requests")</h2>
+		<p>
+			In Requests section we can edit the Requests table
+		</p>
+        @*<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>*@
+    </div>
+</div>
